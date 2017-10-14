@@ -11,7 +11,7 @@ function menu() {
 		{
 			type: "list",
 			message: "\nPlease choose an option\n",
-			choices: ["Create Basic Card", "Create Cloze Card", "Show All Cards", "Exit"],
+			choices: ["Create Basic Card", "Create Cloze Card", /*"Show All Cards",*/ "Exit"],
 			name: "options"
 		}
   ]).then(function (answer) {
