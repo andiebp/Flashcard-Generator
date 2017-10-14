@@ -1,10 +1,10 @@
 function ClozeCard(text, cloze) {
-    this.cloze = cloze;
-    this.partial = text.replace(cloze, "...");
-    this.fulltext = text;
+	this.cloze = cloze;
+	this.partial = text.replace(cloze, "...");
+	this.fullText = text;
 
-    if (!text.contains(cloze)) {
-        console.log("This does not work");
-    }
+	if (!text.includes(cloze)) {
+		throw "Cloze Text is not present in Full Text"
+	}
 };
 module.exports = ClozeCard;
